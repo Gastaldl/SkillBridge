@@ -4,7 +4,7 @@
 
 ## Descrição do Projeto
 
-A **SkillBridge** é uma API RESTful desenvolvida para gerenciar uma plataforma de educação continuada. [cite\_start]No contexto de transformação digital impulsionada por IA e automação, nossa solução visa facilitar o **Reskilling** (requalificação) e **Upskilling** (aperfeiçoamento) de profissionais[cite: 8, 10, 11].
+A **SkillBridge** é uma API RESTful desenvolvida para gerenciar uma plataforma de educação continuada. No contexto de transformação digital impulsionada por IA e automação, nossa solução visa facilitar o **Reskilling** (requalificação) e **Upskilling** (aperfeiçoamento) de profissionais[cite: 8, 10, 11].
 
 A API permite o gerenciamento de **Trilhas de Aprendizagem** focadas em competências do futuro (como IA Generativa, ESG e Soft Skills) e o cadastro de **Usuários** que buscam se preparar para o mercado de trabalho de 2030.
 
@@ -18,13 +18,13 @@ A API permite o gerenciamento de **Trilhas de Aprendizagem** focadas em competê
 
 ## Tecnologias Utilizadas
 
-  * [cite\_start]**Linguagem:** C\# (Platforma .NET 9) [cite: 136, 142]
+  * **Linguagem:** C\# (Platforma .NET 9) [cite: 136, 142]
   * **Framework:** ASP.NET Core Web API
-  * [cite\_start]**Banco de Dados:** Oracle Database [cite: 46, 88]
+  * **Banco de Dados:** Oracle Database [cite: 46, 88]
   * **ORM:** Entity Framework Core 9.0
   * **Documentação:** Swagger (Swashbuckle)
   * **Versionamento:** Asp.Versioning.Mvc
-  * [cite\_start]**Arquitetura:** Camadas (DDD Simplificado: Controller, Service, Repository) [cite: 41]
+  * **Arquitetura:** Camadas (DDD Simplificado: Controller, Service, Repository) [cite: 41]
 
 -----
 
