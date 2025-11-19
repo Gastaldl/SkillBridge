@@ -18,13 +18,13 @@ A API permite o gerenciamento de **Trilhas de Aprendizagem** focadas em competê
 
 ## Tecnologias Utilizadas
 
-  * **Linguagem:** C\# (Platforma .NET 9) [cite: 136, 142]
+  * **Linguagem:** C\# (Platforma .NET 9)
   * **Framework:** ASP.NET Core Web API
-  * **Banco de Dados:** Oracle Database [cite: 46, 88]
+  * **Banco de Dados:** Oracle Database
   * **ORM:** Entity Framework Core 9.0
   * **Documentação:** Swagger (Swashbuckle)
   * **Versionamento:** Asp.Versioning.Mvc
-  * **Arquitetura:** Camadas (DDD Simplificado: Controller, Service, Repository) [cite: 41]
+  * **Arquitetura:** Camadas (DDD Simplificado: Controller, Service, Repository)
 
 -----
 

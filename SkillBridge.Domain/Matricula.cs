@@ -4,19 +4,19 @@ namespace SkillBridge.Domain
 {
     public class Matricula
     {
-        public long Id { get; set; } // [cite: 204]
+        public long Id { get; set; }
 
         [Required]
-        public long UsuarioId { get; set; } // [cite: 205]
+        public long UsuarioId { get; set; }
 
         [Required]
-        public long TrilhaId { get; set; } // [cite: 206]
+        public long TrilhaId { get; set; }
 
-        public DateTime DataInscricao { get; set; } // [cite: 207]
+        public DateTime DataInscricao { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string Status { get; set; } // Ex: ATIVA, CONCLUIDA, CANCELADA [cite: 208, 209, 212]
+        public string Status { get; set; }
 
         public virtual Usuario Usuario { get; set; }
         public virtual Trilha Trilha { get; set; }
