@@ -2,64 +2,59 @@
 
 > **Tema:** O Futuro do Trabalho - Upskilling & Reskilling para 2030+
 
-## Descrição do Problema e Solução
+## 📄 Descrição do Problema e Solução
 
 ### O Problema
-
 O mercado de trabalho enfrenta uma transformação acelerada impulsionada por IA e automação. Profissionais correm o risco de obsolescência de suas funções atuais, enquanto empresas sofrem com a escassez de talentos qualificados nas competências do futuro (Tech, Dados, ESG).
 
 ### A Solução Proposta (Koda)
-
 A **Koda** é uma API RESTful projetada para ser o motor de plataformas de educação continuada. Ela gerencia o ciclo de vida de **Upskilling** e **Reskilling**, permitindo:
-
 1.  **Gestão de Trilhas:** Criação de roteiros de aprendizado focados em skills de 2030+.
 2.  **Gestão de Talentos:** Cadastro e acompanhamento de usuários em transição de carreira.
 3.  **Integração:** Arquitetura agnóstica pronta para conectar com front-ends web, mobile ou sistemas de RH.
 
------
+---
 
-## Deploy e Acesso (Produção)
+## ☁️ Deploy e Acesso (Produção)
 
 A API está publicada e operante no Microsoft Azure.
 
-  * **Swagger UI (Documentação Interativa):** [Acessar Swagger na Nuvem](https://api-koda-fiap-hehyffhvcdgvbxdf.brazilsouth-01.azurewebsites.net/swagger)
-  * **Base URL:** `https://api-koda-fiap-hehyffhvcdgvbxdf.brazilsouth-01.azurewebsites.net`
+* **Swagger UI (Documentação Interativa):** [Acessar Swagger na Nuvem](https://api-koda-fiap-hehyffhvcdgvbxdf.brazilsouth-01.azurewebsites.net/swagger)
+* **Base URL:** `https://api-koda-fiap-hehyffhvcdgvbxdf.brazilsouth-01.azurewebsites.net`
 
 > **Nota sobre Acesso:** O ambiente de produção conecta-se automaticamente a uma instância Oracle Database na nuvem. As credenciais (Usuário/Senha) estão configuradas seguramente via **Azure Environment Variables** e não são necessárias para consumir a API pública.
 
------
+---
 
-## Tecnologias e Versões
+## 🛠️ Tecnologias e Versões
 
-  * **Linguagem:** C\# (.NET 9.0)
-  * **Framework:** ASP.NET Core Web API
-  * **Banco de Dados:** Oracle Database (compatível com 11g/12c/19c/21c)
-  * **ORM:** Entity Framework Core 9.0
-  * **Documentação:** Swashbuckle (Swagger/OpenAPI)
-  * **Versionamento:** Asp.Versioning.Mvc
+* **Linguagem:** C# (.NET 9.0)
+* **Framework:** ASP.NET Core Web API
+* **Banco de Dados:** Oracle Database (compatível com 11g/12c/19c/21c)
+* **ORM:** Entity Framework Core 9.0
+* **Documentação:** Swashbuckle (Swagger/OpenAPI)
+* **Versionamento:** Asp.Versioning.Mvc
 
------
+---
 
 ## ⚙️ Guia de Instalação e Execução Local
 
 Siga estes passos para rodar o projeto na sua máquina.
 
-### 1\. Pré-requisitos
-
-  * [.NET SDK 9.0](https://dotnet.microsoft.com/download) instalado.
-  * Acesso a um banco Oracle (Local ou Remoto).
-  * Ferramenta de CLI do EF Core instalada globalmente:
+### 1. Pré-requisitos
+* [.NET SDK 9.0](https://dotnet.microsoft.com/download) instalado.
+* Acesso a um banco Oracle (Local ou Remoto).
+* Ferramenta de CLI do EF Core instalada globalmente:
     ```bash
     dotnet tool install --global dotnet-ef
     ```
 
-### 2\. Instalar Dependências
-
+### 2. Instalar Dependências
 Abra o terminal na raiz da solução (`SkillBridge.sln`) e restaure os pacotes:
 
 ```bash
 dotnet restore
-```
+````
 
 ### 3\. Configurar o Banco de Dados
 
@@ -147,7 +142,7 @@ A API utiliza versionamento na URL: `/api/v1/`.
 
 -----
 
-## Como Testar Rapidamente
+## 🧪 Como Testar Rapidamente
 
 ### Opção A: Via Swagger (Interface Visual)
 
@@ -156,19 +151,27 @@ A API utiliza versionamento na URL: `/api/v1/`.
 3.  Clique em **Try it out**.
 4.  Cole o JSON de exemplo e clique em **Execute**.
 
-### Opção B: Via cURL (Terminal)
+### Opção B: Via Interface Web (Index.html)
+
+Para facilitar a validação visual do Backend, mantivemos um arquivo `index.html` na raiz do projeto. Ele funciona como uma SPA (Single Page Application) simples para listar e cadastrar dados.
+
+1.  Abra o arquivo `index.html` no seu navegador.
+2.  Ele se conectará automaticamente à API para listar Trilhas e Usuários em uma interface amigável.
+      * *Nota:* Caso queira alternar entre a API Local e a de Produção, basta editar a variável `API_URL` dentro do script do arquivo HTML.
+
+### Opção C: Via cURL (Terminal)
 
 Para testar a listagem de trilhas rapidamente via linha de comando:
 
 ```bash
 curl -X 'GET' \
-  'https://api-koda-fiap-hehyffhvcdgvbxdf.brazilsouth-01.azurewebsites.net/api/v1/Trilhas' \
+  '[https://api-koda-fiap-hehyffhvcdgvbxdf.brazilsouth-01.azurewebsites.net/api/v1/Trilhas](https://api-koda-fiap-hehyffhvcdgvbxdf.brazilsouth-01.azurewebsites.net/api/v1/Trilhas)' \
   -H 'accept: text/plain'
 ```
 
 -----
 
-## Arquitetura e Organização do Código
+## 🏗️ Arquitetura e Organização do Código
 
 O projeto segue os princípios de **Clean Architecture** e **DDD (Domain-Driven Design)** simplificado, visando legibilidade e facilidade de manutenção:
 
@@ -179,8 +182,10 @@ O projeto segue os princípios de **Clean Architecture** e **DDD (Domain-Driven 
 
 -----
 
-## Integrantes
+## 👨‍💻 Autores
 
   * **Márcio Gastaldi** - RM98811
   * **Arthur Bessa Pian** - RM99215
   * **Davi Desenzi** - RM550849
+
+
