@@ -2,7 +2,7 @@
 
 > **Tema:** O Futuro do Trabalho - Upskilling & Reskilling para 2030+
 
-## 📄 Descrição do Problema e Solução
+## Descrição do Problema e Solução
 
 ### O Problema
 O mercado de trabalho enfrenta uma transformação acelerada impulsionada por IA e automação. Profissionais correm o risco de obsolescência de suas funções atuais, enquanto empresas sofrem com a escassez de talentos qualificados nas competências do futuro (Tech, Dados, ESG).
@@ -15,7 +15,7 @@ A **Koda** é uma API RESTful projetada para ser o motor de plataformas de educa
 
 ---
 
-## ☁️ Deploy e Acesso (Produção)
+## Deploy e Acesso (Produção)
 
 A API está publicada e operante no Microsoft Azure.
 
@@ -26,7 +26,7 @@ A API está publicada e operante no Microsoft Azure.
 
 ---
 
-## 🛠️ Tecnologias e Versões
+## Tecnologias e Versões
 
 * **Linguagem:** C# (.NET 9.0)
 * **Framework:** ASP.NET Core Web API
@@ -37,7 +37,7 @@ A API está publicada e operante no Microsoft Azure.
 
 ---
 
-## ⚙️ Guia de Instalação e Execução Local
+## Guia de Instalação e Execução Local
 
 Siga estes passos para rodar o projeto na sua máquina.
 
@@ -142,7 +142,7 @@ A API utiliza versionamento na URL: `/api/v1/`.
 
 -----
 
-## 🧪 Como Testar Rapidamente
+## Como Testar Rapidamente
 
 ### Opção A: Via Swagger (Interface Visual)
 
@@ -171,7 +171,7 @@ curl -X 'GET' \
 
 -----
 
-## 🏗️ Arquitetura e Organização do Código
+## Arquitetura e Organização do Código
 
 O projeto segue os princípios de **Clean Architecture** e **DDD (Domain-Driven Design)** simplificado, visando legibilidade e facilidade de manutenção:
 
@@ -182,7 +182,7 @@ O projeto segue os princípios de **Clean Architecture** e **DDD (Domain-Driven 
 
 -----
 
-## 👨‍💻 Autores
+## Integrantes
 
   * **Márcio Gastaldi** - RM98811
   * **Arthur Bessa Pian** - RM99215
